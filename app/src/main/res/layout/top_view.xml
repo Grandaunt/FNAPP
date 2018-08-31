@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="140dp"
+
+
+    >
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/top_background"/>-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right|bottom"-->
+        <!--android:src="@mipmap/monkey"/>-->
+    <LinearLayout
+        android:layout_height="140dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_open_server"
+            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:background="@color/gray9"
+            android:textColor="@color/graye"
+            android:text="开启服务"/>
+        <Button
+            android:id="@+id/btn_close_server"
+            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:text="关闭服务"/>
+    </LinearLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="往期订单"
+        android:textSize="18sp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+</LinearLayout>
+</FrameLayout>

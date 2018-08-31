@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="memberid:"/>
+        <EditText
+            android:id="@+id/memberid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:phoneNumber="true"
+            android:maxLength="10"/>
+
+</LinearLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/addfence"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/startlocation" />-->
+    <!--<Button-->
+        <!--android:id="@+id/upload"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/uploadlocation" />-->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="2.89"
+        android:scrollbars="vertical"
+        android:textColor="#000"
+        android:text=" "/>
+
+</LinearLayout>
