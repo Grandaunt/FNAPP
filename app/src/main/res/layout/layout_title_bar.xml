@@ -2,9 +2,8 @@
 <RelativeLayout android:id="@+id/ly_main_actionbar"
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="42dp"
-
-                android:background="@color/spinner_bg"
+                android:layout_height="65dp"
+                android:background="@color/colorPrimary"
     >
 
     <ImageView
@@ -22,7 +21,7 @@
         android:layout_toRightOf="@+id/img_back"
         android:gravity="center_vertical"
         android:text="title"
-        android:textColor="@color/white_text_color"
+        android:textColor="@color/white"
         android:textSize="20sp"
         />
 

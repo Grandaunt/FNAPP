@@ -4,6 +4,7 @@ import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -14,9 +15,12 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.bcm.havoc.fnapp.Base.application.ACache;
 import com.bcm.havoc.fnapp.Base.application.MyApplication;
+import com.bcm.havoc.fnapp.MainActivity;
+import com.bcm.havoc.fnapp.NewActivity;
 import com.bcm.havoc.fnapp.R;
 import com.google.gson.Gson;
 
@@ -43,6 +47,7 @@ public class LoginActivity extends AppCompatActivity {
     private final int SDK_PERMISSION_REQUEST = 127;
     private String permissionInfo;
     EditText etUrl,et_User, et_Password;
+    TextView btn_registered;
     Button btn_Login;
     private MyApplication application;
     private   ProgressDialog progressDialog;
@@ -62,6 +67,26 @@ public class LoginActivity extends AppCompatActivity {
         et_User=(EditText)findViewById(R.id.et_user);
         et_Password=(EditText)findViewById(R.id.et_pass);
         btn_Login=(Button)findViewById(R.id.btn_login);
+        btn_Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(et_User.getText().toString().equals("admin")&&et_Password.getText().toString().equals("123456")){
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+//                        Logger.d(Entity.getData());
+                        startActivity(intent);
+                }
+            }
+        });
+        btn_registered=(TextView) findViewById(R.id.btn_registered);
+        btn_registered.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, NewActivity.class);
+//                        Logger.d(Entity.getData());
+//                intent.putExtra(BaseInfoActivity.intenttag2, "registered");
+                startActivity(intent);
+            }
+        });
         getPersimmions();
 
     }
@@ -87,6 +112,7 @@ public class LoginActivity extends AppCompatActivity {
     }
      */
     private void LoginHttp(String acc,String password) {
+
 
 //
 //        RequestParams params = new RequestParams(URLConfig.LoginIn);

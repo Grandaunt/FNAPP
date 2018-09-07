@@ -1,9 +1,322 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".BaseInfoActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:text="蜂主姓名 ："
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:text="蜂场名称:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:text="蜂场地址:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:text="蜂场年限:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:text="联系方式:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit" />
+
+
+            </LinearLayout>
+            <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:background="@color/gray_e7e7e7"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:text="蜜蜂信息:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+               <include layout="@layout/view_beer_info"/>
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_new_beer_num"-->
+                <!--android:layout_width="90dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:hint=" 蜜蜂数量 "-->
+                <!--android:background="@drawable/edit"-->
+                <!--android:textSize="18sp" />-->
+
+
+            </LinearLayout>
+            <View android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:background="@color/gray_e7e7e7"/>
+            <!--<com.jaygoo.widget.RangeSeekBar-->
+            <!--android:id="@+id/seekbar5"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--app:rsb_mode="range"-->
+            <!--app:rsb_progress_height="4dp"-->
+            <!--app:rsb_progress_radius="0dp"-->
+            <!--app:rsb_progress_default_color="@color/rsbColorThumbPressed"-->
+            <!--app:rsb_progress_color="@color/colorProgress"-->
+            <!--app:rsb_tick_mark_text_array="@array/wordsArray"-->
+            <!--app:rsb_tick_mark_text_margin="17dp"-->
+            <!--app:rsb_tick_mark_number="4"-->
+            <!--app:rsb_tick_mark_mode="other"-->
+            <!--app:rsb_tick_mark_gravity="center"-->
+            <!--app:rsb_tick_mark_text_color="@color/colorProgress"-->
+            <!--app:rsb_indicator_height="20dp"-->
+            <!--app:rsb_thumb_size="22dp"-->
+            <!--app:rsb_thumb_drawable="@drawable/thumb_yellow"-->
+            <!--app:rsb_indicator_show_mode="showWhenTouch"-->
+            <!--app:rsb_range_interval="25"-->
+            <!--app:rsb_indicator_padding_left="10dp"-->
+            <!--app:rsb_indicator_padding_right="10dp"-->
+            <!--/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:text="可提供服务地区范围（公里）:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <com.jaygoo.widget.RangeSeekBar
+                    android:id="@+id/seekbar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    app:rsb_indicator_height="20dp"
+                    app:rsb_indicator_radius="8dp"
+                    app:rsb_indicator_show_mode="alwaysShow"
+                    app:rsb_indicator_text_size="12sp"
+                    app:rsb_indicator_width="80dp"
+                    app:rsb_mode="range"
+                    app:rsb_progress_color="@color/colorProgress"
+                    app:rsb_progress_default_color="@color/rsbColorSeekBarDefault"
+                    app:rsb_progress_height="6dp"
+                    app:rsb_progress_radius="0dp"
+                    app:rsb_thumb_drawable="@drawable/seekbar_thumb"
+                    app:rsb_tick_mark_mode="other"
+                    app:rsb_tick_mark_number="4"
+                    app:rsb_tick_mark_text_array="@array/markArray"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:text="可提供服务时间范围（天）:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <com.jaygoo.widget.RangeSeekBar
+                    android:id="@+id/seekbar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    app:rsb_indicator_height="20dp"
+                    app:rsb_indicator_radius="8dp"
+                    app:rsb_indicator_show_mode="alwaysShow"
+                    app:rsb_indicator_text_size="12sp"
+                    app:rsb_indicator_width="80dp"
+                    app:rsb_mode="range"
+                    app:rsb_progress_color="@color/colorProgress"
+                    app:rsb_progress_default_color="@color/rsbColorSeekBarDefault"
+                    app:rsb_progress_height="6dp"
+                    app:rsb_progress_radius="0dp"
+                    app:rsb_thumb_drawable="@drawable/seekbar_thumb"
+                    app:rsb_tick_mark_mode="other"
+                    app:rsb_tick_mark_number="4"
+                    app:rsb_tick_mark_text_array="@array/markArray"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/white"
+                    android:text="报价（千元/每箱）:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+                <com.jaygoo.widget.RangeSeekBar
+                    android:id="@+id/seekbar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    app:rsb_indicator_height="20dp"
+                    app:rsb_indicator_radius="8dp"
+                    app:rsb_indicator_show_mode="alwaysShow"
+                    app:rsb_indicator_text_size="12sp"
+                    app:rsb_indicator_width="80dp"
+                    app:rsb_mode="range"
+                    app:rsb_progress_color="@color/colorProgress"
+                    app:rsb_progress_default_color="@color/rsbColorSeekBarDefault"
+                    app:rsb_progress_height="6dp"
+                    app:rsb_progress_radius="0dp"
+                    app:rsb_thumb_drawable="@drawable/seekbar_thumb"
+                    app:rsb_tick_mark_mode="other"
+                    app:rsb_tick_mark_number="4"
+                    app:rsb_tick_mark_text_array="@array/markArray"
+
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_miss_fn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@color/colorPrimary"
+                android:text="完 成"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

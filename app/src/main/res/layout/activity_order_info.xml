@@ -5,19 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:background="@color/bg"
+    android:background="@color/spinner_bg"
     tools:context=".OrderInfoActivity">
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="25dp"
         android:layout_gravity="center"
+        android:layout_margin="12dp"
         card_view:cardBackgroundColor="@android:color/white"
         card_view:cardCornerRadius="16dp"
         card_view:cardElevation="3dp"
         card_view:cardUseCompatPadding="true"
 
         >
+
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
@@ -28,14 +29,14 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:background="@color/colorPrimaryDark"
-            android:padding="@dimen/activity_horizontal_margin"
+            android:padding="12dp"
             android:layout_height="65dp">
             <ImageButton
                 android:id="@+id/im_back_order"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
-                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingRight="12dp"
                 android:background="@null"
                 android:src="@mipmap/ic_back_white"/>
 
@@ -51,11 +52,14 @@
                 android:textSize="20sp"
                 />
         </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <LinearLayout
             android:layout_width="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1"
-            android:padding="@dimen/activity_horizontal_margin"
+            android:padding="12dp"
             android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -66,13 +70,13 @@
                     android:layout_height="25dp"
                     android:layout_width="25dp"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/ic_comm_gn"/>
+                    android:src="@mipmap/ic_zhiwu"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimaryDark"
-            android:text="昌平益达丰果树农场"
-            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="昌平益达丰果蔬农场"
+            android:layout_margin="12dp"
             android:background="@color/white"
             android:textSize="18sp" />
             </LinearLayout>
@@ -91,7 +95,64 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorPrimaryDark"
                         android:text="2018.07.05-2018.12.28"
-                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:layout_margin="12dp"
+                        android:background="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_mifeng"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="3箱蜜蜂"
+                        android:layout_margin="12dp"
+                        android:background="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_area"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="三亩地"
+                        android:layout_margin="12dp"
+                        android:background="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_zhiwu"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="苹果树"
+                        android:layout_margin="12dp"
                         android:background="@color/white"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -109,8 +170,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorPrimaryDark"
-                        android:text="3000"
-                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:text="30000"
+                        android:layout_margin="12dp"
                         android:background="@color/white"
                         android:textSize="18sp" />
                 </LinearLayout>
@@ -125,26 +186,78 @@
                         android:scaleType="fitXY"
                         android:src="@mipmap/ic_status"/>
                     <TextView
+                        android:id="@+id/tv_oder_status"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorPrimaryDark"
                         android:text="未完成"
-                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:layout_margin="12dp"
                         android:background="@color/white"
                         android:textSize="18sp" />
                 </LinearLayout>
-                <View android:layout_height="0.5dp"
-                    android:layout_width="match_parent"
-                    android:background="@color/gray_e7e7e7"/>
-                <TextView
+                <!--<View android:layout_height="0.5dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:background="@color/gray_e7e7e7"/>-->
+                <LinearLayout
                     android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_ly"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="无"
+                        android:layout_margin="12dp"
+                        android:background="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_phone"/>
+                    <TextView
+                        android:id="@+id/tv_oder_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="15730762851"
+                        android:layout_margin="12dp"
+                        android:background="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+        </LinearLayout>
+            </ScrollView>
+            <LinearLayout
+                android:id="@+id/ly_new_order_ok"
+                android:layout_width="match_parent"
+
+                android:background="@color/skin_fourteen"
+                android:layout_marginTop="12dp"
+                android:layout_height="65dp">
+                <Button
+                    android:id="@+id/im_new_order_ok"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:text="留言"
-                    android:layout_margin="@dimen/activity_horizontal_margin"
-                    android:background="@color/white"
-                    android:textSize="18sp" />
+                    android:background="@null"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="确认接单"
+                    />
+
+            </LinearLayout>
         </LinearLayout>
-        </LinearLayout>
+
     </android.support.v7.widget.CardView>
 </LinearLayout>

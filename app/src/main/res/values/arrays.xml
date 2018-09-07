@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kw">
+        <item >032154库位</item>
+        <item >031546库位</item>
+        <item >031268库位</item>
+        <item >032567库位</item>
+        <item >034897库位</item>
+        <item >034567库位</item>
+        <item >038469库位</item>
+    </string-array>
+    <!--<string-array name="wordsArray">-->
+        <!--<item>15天</item>-->
+        <!--&lt;!&ndash;<item>20天</item>&ndash;&gt;-->
+        <!--<item>30天</item>-->
+        <!--&lt;!&ndash;<item>40天</item>&ndash;&gt;-->
+        <!--<item>45天</item>-->
+        <!--<item>60天</item>-->
+    <!--</string-array>-->
+    <string-array name="wordsArray">
+        <!--<item>Lv1</item>-->
+        <!--<item>Lv2</item>-->
+        <!--<item>Lv3</item>-->
+        <!--<item>Lv4</item>-->
+        <!--<item>Lv5</item>-->
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+    <!--<string-array name="markArray">-->
+        <!--<item>5千</item>-->
+        <!--<item>1万</item>-->
+        <!--<item>1万5千</item>-->
+        <!--<item>两万</item>-->
+        <!--<item>两万五千</item>-->
+        <!--<item>三万</item>-->
+        <!--<item>三万五千</item>-->
+        <!--<item>四万</item>-->
+        <!--<item>四万五千</item>-->
+        <!--<item>五万</item>-->
+        <!--<item>五万五千</item>-->
+        <!--<item>六万</item>-->
+        <!--<item>六万五千</item>-->
+        <!--<item>七万</item>-->
+        <!--<item>七万五千</item>-->
+        <!--<item>八万</item>-->
+    <!--</string-array>-->
+    <string-array name="markArray">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="markArray2">
+        <item>-1</item>
+        <item>-0.5</item>
+        <item>0.1</item>
+        <item>0.5</item>
+        <item>0.9</item>
+    </string-array>
+    <string-array name="negativeMarkArray">
+        <item>-100</item>
+        <item>中间</item>
+        <item>0</item>
+        <item>中间</item>
+        <item>100</item>
+    </string-array>
+</resources>
